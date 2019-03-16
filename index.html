@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+</head>
+
+<body>
+    <div class="crystalGame">
+        <h2>CrystalsCollector!</h2>
+    </div>
+    <div class="instructions">
+        <ul>
+            <li>You will be given a random number at the start of the game.</li>
+            <li>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your
+                total score.</li>
+            <li>You win the game by matching your total score to random number, you lose the game if your total score
+                goes above the random number.</li>
+            <li>The value of each crystal is hidden from you until you click on it.</li>
+            <li>Each time when starts, the game will change the values of each crystal.</li>
+        </ul>
+    </div>
+
+    <div class="scoreSheet">
+        <div id="score">
+            10000
+        </div>
+        <div class="winLoss">
+            <p id="wins">wins</p>
+
+            <p id="losses">Loss</p>
+        </div>
+    </div>
+
+    <div class="fourCrystals">
+        <img id="firstImg" src="images/redCrystal.jpg">
+        <img id="secImg" src="images/blueCrystal.jpg">
+        <img id="thirdImg" src="images/yellCrystal.jpg">
+        <img id="forthImg" src="images/greenCrystal.jpg">
+    </div>
+    <div class="totalScore">
+        <p id="totalScore">Your total score is:</p>
+    </div>
+    <div id="finalScoreBoard">
+        000000
+    </div>
+</body>
+
+</html>

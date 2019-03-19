@@ -8,9 +8,11 @@
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body>
+  
     <div class="crystalGame">
         <h2>CrystalsCollector!</h2>
     </div>
@@ -27,9 +29,9 @@
     </div>
 
     <div class="scoreSheet">
-        <div id="score">
+        <p id="score">
             
-        </div>
+        </p>
         <div class="winLoss">
             <p> Wins <span id="wins"></span> </p>
 
@@ -38,17 +40,31 @@
     </div>
 
     <div class="fourCrystals">
-        <img id="firstImg" src="images/redCrystal.jpg">
-        <img id="secImg" src="images/blueCrystal.jpg">
-        <img id="thirdImg" src="images/yellCrystal.jpg">
-        <img id="forthImg" src="images/greenCrystal.jpg">
+        <div class="crystalColor" data-crystal="one">
+            <img id="firstImg" src="images/redCrystal.jpg">
+        </div>
+        <div class="crystalColor" data-crystal="two">
+            <img id="secImg" src="images/blueCrystal.jpg">
+        </div>
+        <div class="crystalColor" data-crystal="three" >
+            <img id="thirdImg" src="images/yellCrystal.jpg">
+        </div>
+        <div class="crystalColor" data-crystal="four">
+            <img id="forthImg" src="images/greenCrystal.jpg">
+        </div>
+
     </div>
+
+  
+
     <div class="totalScore">
         <p id="totalScore">Your total score is:</p>
     </div>
     <div id="finalScoreBoard">
         
     </div>
+    <script src="assets/javascript/game.js"></script>
+
 </body>
 
 </html>

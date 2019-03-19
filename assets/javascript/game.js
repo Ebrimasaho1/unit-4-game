@@ -15,13 +15,13 @@ var crystalFour = Math.floor((Math.random() * 12) + 1);
 
 
 //function for compGuess
-function randomNumGen(){
+//function randomNumGen(){
     console.log("insid randomNum")
     comGuess = Math.floor((Math.random() * 120) + 19);
     
     $("#score").text(comGuess);
     //console.log(comGuess);
-}
+//}
 
 //function for computer random letter generator by crystals
 //for first crystal 

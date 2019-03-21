@@ -6,7 +6,7 @@ var crystalGuess = [];
 var userScore = 0;
 
 console.log("loaded")
-//variables that links js to the html docs
+//random number gebrator between 1-12 when crystals are clicked
 var comGuess;
 var crystalOne = Math.floor((Math.random() * 12) + 1);
 var crystalTwo = Math.floor((Math.random() * 12) + 1);
@@ -17,14 +17,14 @@ var crystalFour = Math.floor((Math.random() * 12) + 1);
 //function for compGuess
 //function randomNumGen(){
     console.log("insid randomNum")
+
+    //computer random number generator
     comGuess = Math.floor((Math.random() * 120) + 19);
     
     $("#score").text(comGuess);
-    //console.log(comGuess);
-//}
 
-//function for computer random letter generator by crystals
-//for first crystal 
+
+//function for on click event using attribute 
 $(".crystalColor").click(function(){
     console.log("inside click")
     var crystalSelected= $(this).attr("data-crystal");
@@ -50,11 +50,16 @@ $(".crystalColor").click(function(){
 
     if (userScore===comGuess){
         wins++;
-        $("#wins").text(wins);
+        $("#wins").text(wins); 
+        $("#alert").text("You won!!");
+    
     }
     if (userScore > comGuess) {
         losses++;
         $("#losses").text(losses);
+        $("#alert").text("You lost!!");
+
+        
     }   
    
 });
@@ -62,7 +67,23 @@ $(".crystalColor").click(function(){
 $("#finalScoreBoard").text(userScore);
 
 $("#score").text(comGuess);
-  
+
+
+//resetting game 
+ $("#reset").click(function () {
+    wins=0;
+    losses=0;
+    score=0;
+    userScore=0;
+    comGuess = Math.floor((Math.random() * 120) + 19);
+
+    $("#wins").text(wins);
+    $("#losses").text(losses);
+    $("#score").text(comGuess);
+    $("#finalScoreBoard").text(userScore);
+    $("#alert").text("");
+    
+});   
   
 
 

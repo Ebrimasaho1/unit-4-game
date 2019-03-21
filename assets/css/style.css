@@ -1,21 +1,21 @@
 body {
     background-color:transparent;
-    background-image: url('backImg.jpg');
+    background-image: url('backImage.png');
     color:black;
     font-family: "Times New Roman", Times, serif;
     width:758px;
     /*z-index: -2;*/
 }
 .crystalGame{
-    background-color:brown;
+    background-color:black;
     color:white;
     width:210px;
     height:50px;
     text-align: center;
 }
 .instructions{
-    background-color: beige;
-    color:green;
+    background-color:blue;
+    color:white;
     width:480px;
 }
 
@@ -29,7 +29,7 @@ body {
     font-size:20px;
 }
 .winLoss{
-    background-color: lightskyblue;
+    background-color: blue;
     width:100px;
     height:100px;
     margin-top:10px;
@@ -45,17 +45,19 @@ img{
     width:75px;
     height:75px;
 }
+
 .crystalColor{
     display: inline;
 }
 
 .totalScore{
-    background-color: teal;
+    background-color:black;
     color:white;
     width:150px;
 }
 #finalScoreBoard{
-    background:teal;
+    /*background:teal;*/
+    background: darkgrey;
     color:white;
     width:150px;
     height:100px;
